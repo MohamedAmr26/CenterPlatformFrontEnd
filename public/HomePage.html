@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="eventListeners.js"></script>
+    <title>سنتر أوائل الاسماعيلية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <a id="BackToTopButton"></a>
+    <nav class="bg-white fixed w-full z-50 -mt-24" dir="rtl">
+        <div class="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8 max-h-27 h-24">
+        <div class="relative flex h-16 items-center">
+            <div class="absolute inset-y-0 left-0 flex items-center justify-items-end sm:hidden">
+            <!-- Mobile menu button-->
+            <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover-mobile-menu-button hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" id="mobile-menu-button" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="block h-10 w-10" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4 font-family-Cairo ListHolder">
+                <a href="#" class="relative text-black rounded-md hover:text-gray-700 px-3 py-2 text-2xl font-normal" aria-current="page">الصفحة الرئيسية</a>
+                <a href="#" class="relative text-black rounded-md hover:text-gray-700 px-3 py-2 text-2xl font-normal">تسجيل الدخول</a>
+                <a href="#" class="relative text-black rounded-md hover:text-gray-700 px-3 py-2 text-2xl font-normal">حصصي</a>
+                <a href="#" class="relative text-black rounded-md hover:text-gray-700 px-3 py-2 text-2xl font-normal">تواصل معنا</a>
+                </div>
+            </div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+      
+            <!-- Logo -->
+            <div class="flex flex-shrink-0 items-center select-none justify-end z-50">
+                <img class="block mt-3 h-24 w-auto lg:hidden drop-shadow-lg" src="../Assets/Logo.png" alt="منصة الأوائل">
+                <img class="hidden mt-16 h-32 w-auto lg:block drop-shadow-lg" src="../Assets/Logo.png" alt="منصة الأوائل">
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden bg-gray-200 hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#" class="block text-black rounded-md hover:text-white hover:bg-gray-800 px-3 py-2 text-2xl font-normal" aria-current="page">الصفحة الرئيسية</a>
+            <a href="#" class="block text-black rounded-md hover:text-white hover:bg-gray-800 px-3 py-2 text-2xl font-normal">تسجيل الدخول</a>
+            <a href="#" class="block text-black rounded-md hover:text-white hover:bg-gray-800 px-3 py-2 text-2xl font-normal">حصصي</a>
+            <a href="#" class="block text-black rounded-md hover:text-white hover:bg-gray-800 px-3 py-2 text-2xl font-normal">تواصل معنا</a>
+          </div>
+        </div>
+      </nav>
+
+      <section id="First-Section" class="mt-24">
+        <div class="relative font-family-Cairo flex-row-reverse isolate overflow-hidden px-6 pt-16 shadow-2xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+          <div class="mx-auto text-white max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-right">
+            <h2 class="text-3xl font-bold md:text-5xl lg:text-5xl whitespace-nowrap">سنتر أوائل الاسماعيلية</h2><br><br>
+            <span class="font-normal text-4xl">دروسك كلها في مكان واحد</span><br><br>
+            <p class="mt-6 font-light text-2xl md:text-3xl md:leading-[3rem] leading-[2.5rem] text-white">مع نخبة من كبار المعلمين, ان شاء الله هتحصل علي افضل جودة للشرح وتنال التفوق والتميز في جميع المواد</p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+              <a href="#" class="rounded-full px-7 py-2.5 text-lg xl:text-xl lg:text-xl font-bold text-white border-4 border-white RoundedWhiteButtonHover">أشترك معنا</a>
+              <a href="#" class="rounded-full px-7 py-2.5 text-lg xl:text-xl lg:text-xl font-bold text-white border-4 border-white RoundedWhiteButtonHover">أعرف المزيد</a>
+            </div>
+          </div>
+          <div class="relative mt-16 w-full h-full lg:mt-8 self-end">
+            <img class="w-[56rem] relative" src="../Assets/Section1_Background.png" alt="App screenshot" width="1824" height="1080">
+          </div>
+        </div>    
+      </section>
+
+      <section id="Second-Section">
+        <div class="patternBackground w-full overflow-hidden flex flex-col items-center pb-4">
+          <h1 class="SectionTitle text-white font-family-Cairo my-8 text-3xl xl:text-5xl lg:text-5xl">أحنا مين؟؟</h1>
+
+          <div class="player w-11/12 lg:w-4/5 xl:w-4/5 my-8 rounded-2xl border-2 xl:border-4 lg:border-4 border-gray-900">
+            <video class="player__video viewer" src="../Assets/SectionVideoTest.mp4"></video>
+            <div class="player__controls">
+              <div class="progress">
+              <div class="progress__filled"></div>
+              </div>
+              <button class="player__button toggle text-xl" title="Toggle Play"><i class="fa-solid fa-play"></i></button>
+              <button class="player__button player__fullscreen text-xl"><i class="fa-solid fa-compress"></i></button>
+            </div>
+          </div>  
+        </div>
+      </section>
+
+      <section id="Third-Section">
+        <div class="w-full overflow-hidden flex flex-col items-center font-family-Cairo">
+          <h1 class="SectionTitle text-white font-family-Cairo my-8 text-3xl xl:text-5xl lg:text-5xl">الصفوف الدراسية المتاحة</h1>
+          <div class="CardsHolder flex flex-row-reverse gap-x-10 my-8 flex-wrap justify-center">
+            <div class="card w-[300px] bg-white my-8 pb-8 shadow-2xl">
+              <div class="relative CardImageHolder bg-cyan-500 w-full h-[210px] rounded-b-full bg-[url('../Assets/CardTest.jpg')]">
+                <div class="absolute CardTextHolder w-full h-[210px] rounded-b-full flex justify-center items-center">
+                  <h2 class="text-white font-bold text-center text-3xl max-w-[8em]">الصف الأول الثانوي</h2>
+                </div>
+              </div>
+              <p class="py-6 text-center text-gray-950">
+                متاح جميع المواد, العملية والادبية للصف الاول الثانوي علي المنصة سواء داخل المحافظة أو خارجها بجودة عالية
+              </p>
+              <a href="#" class="relative left-[25%] rounded-full px-6 py-1 text-lg font-bold text-black border-[3px] border-black bg-white RoundedBlackButtonHover">أشترك الأن</a>
+            </div>
+            <div class="card w-[300px] bg-white my-8 pb-8 shadow-2xl">
+              <div class="relative CardImageHolder bg-cyan-500 w-full h-[210px] rounded-b-full bg-[url('../Assets/CardTest.jpg')]">
+                <div class="absolute CardTextHolder w-full h-[210px] rounded-b-full flex justify-center items-center">
+                  <h2 class="text-white font-bold text-center text-3xl max-w-[8em]">الصف الثاني الثانوي</h2>
+                </div>
+              </div>
+              <p class="py-6 text-center text-gray-950">
+                متاح جميع المواد, العملية والادبية للصف الاول الثانوي علي المنصة سواء داخل المحافظة أو خارجها بجودة عالية
+              </p>
+              <a href="#" class="relative left-[25%] rounded-full px-6 py-1 text-lg font-bold text-black border-[3px] border-black bg-white RoundedBlackButtonHover">أشترك الأن</a>
+            </div>
+            <div class="card w-[300px] bg-white my-8 pb-8 shadow-2xl">
+              <div class="relative CardImageHolder bg-cyan-500 w-full h-[210px] rounded-b-full bg-[url('../Assets/CardTest.jpg')]">
+                <div class="absolute CardTextHolder w-full h-[210px] rounded-b-full flex justify-center items-center">
+                  <h2 class="text-white font-bold text-center text-3xl max-w-[8em]">الصف الثالث الثانوي</h2>
+                </div>
+              </div>
+              <p class="py-6 text-center text-gray-950">
+                متاح جميع المواد, العملية والادبية للصف الاول الثانوي علي المنصة سواء داخل المحافظة أو خارجها بجودة عالية
+              </p>
+              <a href="#" class="relative left-[25%] rounded-full px-6 py-1 text-lg font-bold text-black border-[3px] border-black bg-white RoundedBlackButtonHover">أشترك الأن</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Fourth-Section">
+        <div class="w-full overflow-hidden flex flex-col items-center font-family-Cairo">
+          <h1 class="font-bold text-white font-family-Cairo my-4 xl:my-8 lg:my-8 text-3xl xl:text-5xl lg:text-5xl">فريقنا</h1>
+          <h1 class="SectionTitle font-normal text-white font-family-Cairo text-lg xl:text-3xl lg:text-3xl text-center">مع نخبة من كبار المعلمين والمشرفين علي المنصة</h1>
+
+          <div class="CardsHolder flex flex-row-reverse gap-x-10 mt-8 flex-wrap justify-center">
+            <div class="card w-[300px] bg-white my-8 pb-8 shadow-2xl">
+              <div class="relative CardImageHolder bg-cyan-500 w-full h-[210px] rounded-b-full bg-[url('../Assets/Teachers/Ahmed.jpg')]"></div>
+              <h3 class="font-semibold text-center pt-4 text-2xl">أ/ أحمد أسامة</h3>
+              <p class="pb-8 pt-1 text-center font-light text-gray-950 text-xl">
+                مُعلم الجغرافيا والتاريخ
+              </p>
+              <a href="#" class="relative left-[25%] rounded-full px-6 py-1 text-lg font-bold text-black border-[3px] border-black bg-white RoundedBlackButtonHover">أعرف المزيد</a>
+            </div>
+            <div class="card w-[300px] bg-white my-8 pb-8 shadow-2xl">
+              <div class="relative CardImageHolder bg-cyan-500 w-full h-[210px] rounded-b-full bg-[url('../Assets/Teachers/Mohamed.jpg')]"></div>
+              <h3 class="font-semibold text-center pt-4 text-2xl">أ/ محمد معاطي</h3>
+              <p class="pb-8 pt-1 text-center font-light text-gray-950 text-xl">
+                مُعلم الرياضيات
+              </p>
+              <a href="#" class="relative left-[25%] rounded-full px-6 py-1 text-lg font-bold text-black border-[3px] border-black bg-white RoundedBlackButtonHover">أعرف المزيد</a>
+            </div>
+            <div class="card w-[300px] bg-white my-8 pb-8 shadow-2xl">
+              <div class="relative CardImageHolder bg-cyan-500 w-full h-[210px] rounded-b-full bg-[url('../Assets/Teachers/Tarek.jpg')]"></div>
+              <h3 class="font-semibold text-center pt-4 text-2xl">أ/ طارق سليمان</h3>
+              <p class="pb-8 pt-1 text-center font-light text-gray-950 text-xl">
+                مُعلم الفيزياء
+              </p>
+              <a href="#" class="relative left-[25%] rounded-full px-6 py-1 text-lg font-bold text-black border-[3px] border-black bg-white RoundedBlackButtonHover">أعرف المزيد</a>
+            </div>
+          </div>
+
+          <nav class="Pagination isolate inline-flex -space-x-px gap-x-5 mb-2 rounded-md shadow-sm" aria-label="Pagination">            
+            <a class="relative inline-flex items-center my-4 w-4 h-4 bg-white rounded-full"></a>
+            <a class="relative inline-flex items-center my-4 w-4 h-4 bg-white rounded-full"></a>
+            <a class="relative inline-flex items-center checked my-4 w-4 h-4 bg-white rounded-full"></a>
+            <a class="relative inline-flex items-center my-4 w-4 h-4 bg-white rounded-full"></a>
+          </nav>
+        </div>
+      </section>
+
+      <section id="Fifth-Section">
+        <div class="w-full overflow-hidden flex flex-col items-center font-family-Cairo py-16">
+          <h1 class="font-bold text-white font-family-Cairo my-4 xl:my-8 lg:my-8 text-3xl xl:text-5xl lg:text-5xl">تواصل معنا</h1>
+          <h1 class="SectionTitle font-normal text-white font-family-Cairo text-[1em] xl:text-3xl lg:text-3xl text-center">القسم الخاص بمواقع التواصل الاجتماعي والدعم الفني</h1>
+
+          <div class="relative SocialHolder flex gap-x-5 xl:gap-x-20 lg:gap-x-20 my-16 HrLike text-[5em] xl:text-[7em] lg:text-[7em]">
+            <a class="inline-flex items-center"><i class="fa-brands fa-instagram text-black opacity-50"></i></a>
+            <a class="inline-flex items-center"><i class="fa-brands fa-tiktok text-black opacity-50"></i></a>
+            <a class="inline-flex items-center"><i class="fa-brands fa-whatsapp text-black opacity-50"></i></a>
+            <a class="inline-flex items-center"><i class="fa-brands fa-facebook text-black opacity-50"></i></a>
+          </div>
+
+          <div class="flex flex-row flex-wrap text-center opacity-50 text-3xl xl:text-5xl lg:text-5xl font-bold my-8">
+            <i class="fa-solid fa-phone -mt-2 mr-4 text-[1.5em]"></i>
+            012 67827338583
+          </div>
+      </section>
+
+      <footer class="footer-2">
+        <div class="container px-4 mx-auto">
+      
+        <div class="py-4">
+          <div class="container px-4 mx-auto">
+      
+            <div class="md:flex md:-mx-4 md:items-center">
+              <div class="md:flex-1 md:px-4 text-center md:text-left">
+                <p class="text-white">&copy; <strong>سنتر أوائل الاسماعيلية</strong></p>
+              </div>
+              <div class="md:flex-1 md:px-4 text-center md:text-right">
+                <a href="#" class="py-2 px-4 text-white inline-block hover:underline">Terms of Service</a>
+                <a href="#" class="py-2 px-4 text-white inline-block hover:underline">Privacy Policy</a>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      
+      </footer>
+</body>
+</html>
